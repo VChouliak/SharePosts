@@ -30,7 +30,7 @@ class Core
 
     private function setMethodAndParamsFromUrl()
     {
-        if (isset($this->url[1]) && isset($this->url[1])) {
+        if (isset($this->url[1])) {
             if (method_exists($this->currentController, $this->url[1])) {
                 $this->currentMethod = $this->url[1];
 

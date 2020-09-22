@@ -8,10 +8,10 @@ class Core
 
     public function __construct()
     {
-        $this->setCurrentController();
+        $this->setCurrentControllerFromUrl();
     }
 
-    private function setCurrentController(){
+    private function setCurrentControllerFromUrl(){
         $url = $this->getUrl();
         if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
             $this->currentController = ucwords($url[0]);

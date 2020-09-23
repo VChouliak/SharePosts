@@ -7,7 +7,11 @@ class Pages extends Controller
 
     public function index()
     {
-        $this->loadView('pages/index');
+        $data = [
+            'title'=>'Welcome'
+        ];
+        
+        $this->loadView('pages/index', $data);
     }
 
     public function about()

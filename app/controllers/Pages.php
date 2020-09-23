@@ -10,12 +10,15 @@ class Pages extends Controller
         $data = [
             'title'=>'Welcome'
         ];
-        
+
         $this->loadView('pages/index', $data);
     }
 
     public function about()
     {
+        $data = [
+            'title'=>'About'
+        ];
         $this->loadView('pages/about');
     }
 }

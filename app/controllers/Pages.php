@@ -19,6 +19,6 @@ class Pages extends Controller
         $data = [
             'title'=>'About'
         ];
-        $this->loadView('pages/about');
+        $this->loadView('pages/about', $data);
     }
 }

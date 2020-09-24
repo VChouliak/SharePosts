@@ -24,7 +24,7 @@ class Users extends Controller
           ];
             
           if(empty($data['email'])){
-            $data['email_err'] = 'Pleae enter email';
+            $data['email_err'] = 'Please enter email';
           } else {
 
             if($this->userModel->findUserByEmail($data['email'])){
@@ -33,17 +33,17 @@ class Users extends Controller
           }
             
           if(empty($data['name'])){
-            $data['name_err'] = 'Pleae enter name';
+            $data['name_err'] = 'Please enter name';
           }
             
           if(empty($data['password'])){
-            $data['password_err'] = 'Pleae enter password';
+            $data['password_err'] = 'Please enter password';
           } elseif(strlen($data['password']) < 6){
             $data['password_err'] = 'Password must be at least 6 characters';
           }
             
           if(empty($data['confirm_password'])){
-            $data['confirm_password_err'] = 'Pleae confirm password';
+            $data['confirm_password_err'] = 'Please confirm password';
           } else {
             if($data['password'] != $data['confirm_password']){
               $data['confirm_password_err'] = 'Passwords do not match';
@@ -95,7 +95,7 @@ class Users extends Controller
           ];
         
           if(empty($data['email'])){
-            $data['email_err'] = 'Pleae enter email';
+            $data['email_err'] = 'Please enter email';
           }
             
           if(empty($data['password'])){

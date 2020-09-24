@@ -9,5 +9,5 @@
     <title><?php echo SITENAME; ?></title>
 </head>
 <body>
-    
+<?php require APPROOT . '/views/includes/navbar.php'; ?> 
 <div class="container">

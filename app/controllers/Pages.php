@@ -7,6 +7,9 @@ class Pages extends Controller
 
     public function index()
     {
+        if(isLoggedIn()){
+            redirect('posts');
+        }
         $data = [
             'title'=>'Welcome',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque architecto nostrum porro officia modi reprehenderit quam velit ad, blanditiis laborum numquam. A fugiat tempore nihil minima atque neque error voluptates!

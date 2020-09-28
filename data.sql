@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS shareposts;
 
-use posts;
+use shareposts;
 
 CREATE TABLE IF NOT EXISTS posts
 (

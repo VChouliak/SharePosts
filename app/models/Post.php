@@ -8,9 +8,10 @@ class Post{
     }
 
     public function getPosts(){
-        $this->db->query('SELECT *, posts.id as postId, posts.chreated_at as postCreated, users.chreated_at as userCreated, users.id as userId
+        $this->db->query('SELECT *, posts.id as postId, posts.created_at as postCreated, users.created_at as userCreated, users.id as userId
                             FROM posts
-                            JOIN ON posts.user_id = users.id
+                            JOIN users
+                            ON posts.user_id = users.id
                             ORDER BY posts.created_at DESC');
 
         $result = $this->db->getResultSet();

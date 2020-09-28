@@ -14,8 +14,7 @@ CREATE TABLE IF NOT EXISTS posts
 
 CREATE TABLE IF NOT EXISTS users
 (
-	id INT auto_increment
-		VARCHAR key,
+	id INT auto_increment PRIMARY KEY,
 	name VARCHAR(255),
 	email VARCHAR(255),
 	password VARCHAR(255) ,
